@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>마스크로 가려진 얼굴 복원</title>
+    <script src = "fileNum.js"> // load error </script> <!-- 학습시킬 수 있는 사진 -->
+</head>
+<body>
+<article id="544744e3-6061-40fc-bb3d-cc7e9680bf83" class="page sans">
+    <header>
+        <h1 class="page-title">마스크로 가려진 얼굴 복원</h1>
+    </header>
+    <h3>
+        <사용 방법>
+        <h4>
+            1. 여러 장의 사진들을 업로드
+            <br>
+            2. 복원하기를 원하는 표정을 선택(300장 이상이어야 학습 가능)
+            <br>
+            3. 마스크 쓴 사진을 업로드
+            <br>
+            4. 복원 버튼 클릭
+            <br>
+            5. 복원 완료
+        </h4>
+
+    </h3>
+    <hr>
+
+    <h3><strong>사진 업로드</strong></h3>
+    <a href = "/index"> 사진 업로드</a>
+
+    <hr>
+
+    <h3>원하는 표정 선택</h3>
+
+    <button type = "button" onclick = "alert('화난 표정╬☉д⊙')">Angry</button> <!-- 300장 이상만 학습, 이하면 학습 불가 메시지 띄우기 -->
+    <button type = "button" onclick = "alert('웃는 얼굴:)')">Happy</button> <!-- 300장 이상만 학습, 이하면 학습 불가 메시지 띄우기 -->
+    <button type = "button" onclick = "alert('무표정.')">Neutral</button> <!-- 300장 이상만 학습, 이하면 학습 불가 메시지 띄우기 -->
+    <script>
+        // angryNum();
+        // happyNum();
+        // neutralNum();
+    </script>
+    <br><hr>
+
+    <h3><strong>마스크 쓴 사진 업로드</strong></h3>
+    <a href = "/restore"> 마스크 쓴 사진 업로드</a>
+    <hr>
+
+    <h3>업로드 한 사진에서 마스크 없애고 대체할 표정 선택</h3>
+    <!-- 각 표정마다 학습이 제대로 이루어 졌는지, 그로 인해 마스크 쓴 사진을 업로드하면 복원이 가능한지를 실시간으로 알려줘야 한다. -->
+    <button type = "button" onclick = "alert('화난 표정╬☉д⊙')">Angry</button> 
+    <button type = "button" onclick = "alert('웃는 얼굴:)')">Happy</button>
+    <button type = "button" onclick = "alert('무표정-_-.')">Neutral</button>
+
+    </div>
+
+    
+</article>
+</body>
+</html>
